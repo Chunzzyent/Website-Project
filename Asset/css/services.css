@@ -1,0 +1,411 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+
+header h1{
+    margin-left: 90px;
+}
+
+li,a,button{
+    color: #adf;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul{
+    list-style: none;
+
+}
+
+
+nav ul li{
+    display: inline-block;
+    transition: transform .3s;
+    padding-right: 40px;
+}
+
+li:hover{
+    transform: scale(1);
+}
+
+nav{
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+}
+
+nav ul li a:hover{
+    color: white;
+    
+}
+
+nav{
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+}
+
+nav ul li a:hover{
+    color: white;
+    
+}
+
+header button{
+    border: none;
+    color: white;
+    background-color: transparent;
+    padding: 12px 30px;
+    border: 1px solid white;
+    margin-left: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.98);
+}
+
+header i{
+    margin-right: 300px;
+    font-size: 30px;
+}
+
+.container {
+    color: white;
+    background-color: #121212;
+    border-radius: 20px;
+    padding: 40px 0 70px 0;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 170px 20px 170px;   
+}
+
+.container h5{
+    text-align: center;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    gap: 30px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.card {
+    background-color: #181818;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 45px;
+    transition: border-color 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s ease-out; 
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:nth-child(1) {
+    transition-delay: 0.2s;
+}
+  
+.card:nth-child(2) {
+    transition-delay: 0.4s;
+}
+  
+.card:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.722);
+}
+
+.card i {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.card:hover {
+    border-color: #e64a19;
+}
+
+.card i:hover {
+    color:#e64a19;
+}
+
+.contain h3{
+    margin-top: 200px;
+}
+
+.mycontainer {
+    color: white;
+    background-color: #121212;
+    border-radius: 20px;
+    padding: 40px 0 70px 0;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 170px 20px 170px;   
+}
+
+.mycontainer h5{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mycontainer h1{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.mycard-container {
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
+    width: 80%;
+    margin-left: 15%;
+}
+
+.mycard {
+    background-color: #181818;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 45px;
+    height: 370px;
+    
+}
+
+.mycard.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mycard:nth-child(1) {
+    transition-delay: 0.2s;
+}
+  
+.mycard:nth-child(2) {
+    transition-delay: 0.4s;
+}
+  
+.mycard:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+.mycard h2 {
+    font-size: 15px;
+    margin: 20px 60px;
+    
+}
+
+.mycard p {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left ;
+}
+
+.mycard {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.mycard:hover {
+    transform: translateY(-5px);
+}
+
+.mycard h2 {
+    margin-bottom: 10px;
+}
+
+.mycard p {
+    margin-bottom: 20px;
+}
+
+.mycard .price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff5722;
+    margin-bottom: 10px;
+}
+
+.mycard .price span {
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.mycard ul {
+    padding:  0;
+    margin-bottom: 10px;
+}
+
+.mycard ul li {
+    margin: 5px 0;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 50px;
+    color: rgba(255, 255, 255, 0.672);
+}
+
+.mycard-container button {
+    padding: 10px 20px;
+    margin-left: -80px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5722;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mycard-container button:hover {
+    background-color: #121212;
+    border-color: 2px solid white;
+}
+
+.newcontainer {
+    background-color: #181818;
+    border-radius: 20px;
+    margin-top: 70px;
+    padding: 70px 35px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 11%;
+}
+
+
+.newcontainer h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.newcontainer p {
+    font-size: 0.9em;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.newbutton {
+    background-color: #FF5733;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.newbutton:hover {
+    background-color: #121214;
+    transition: .5s ease-in-out;
+}
+
+.newcontainer .newbutton i{
+    color: white;
+}
+
+footer{
+    background-color: #121214;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 150px;
+    height: 50vh;
+}
+
+footer .social-section {
+    margin-bottom: 10px;
+}
+
+footer .social-section p{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 50;
+}
+
+footer .social-icons i{
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    border:solid 2px #55514c;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+footer p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+footer .social-icons a:hover{
+    opacity: 0.7;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #121214;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+  
+  #back-to-top:hover {
+    opacity: 1;
+  }

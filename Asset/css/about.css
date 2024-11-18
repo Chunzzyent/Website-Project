@@ -1,0 +1,368 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+
+header h1{
+    margin-left: 90px;
+}
+
+li,a,button{
+    color: #adf;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul{
+    list-style: none;
+
+}
+
+
+nav ul li{
+    display: inline-block;
+    transition: transform .3s;
+    padding-right: 40px;
+}
+
+li:hover{
+    transform: scale(1);
+}
+
+nav{
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+}
+
+nav{
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+}
+
+nav ul li a:hover{
+    color: white;
+    
+}
+
+header button{
+    border: none;
+    color: white;
+    background-color: transparent;
+    padding: 12px 30px;
+    border: 1px solid white;
+    margin-left: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.98);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 170px;
+}
+
+.card {
+    flex: 1;
+    background-color: #121212;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 350px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: none;
+}
+
+.container_2{
+    flex: 2;
+    color: white;
+    margin-left: 20px;
+    padding-left: 30px;
+    background-color: #121212;
+    padding: 50px;
+    border-radius: 10px 20px;
+}
+
+.container_2 span{
+    color: #e64a19;
+    background: none;
+}
+
+.container_2, .card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.container_2.visible, .card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container_2, .card {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+
+.container_2 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: none;
+}
+  
+.container_2 p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    background: none;
+}
+  
+button.button {
+    margin-top: 5px;
+    padding: 15px 20px;
+    border-radius: 10px ;
+    background-color:  #e64a19;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button i{
+    background: none;
+}
+
+.button:hover {
+    background-color: #121212;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.mycontainer {  
+    display: flex;
+    background-color: black;
+    margin: 20px 150px;
+    padding: 20px;
+    gap: 30px;
+    color: white;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 60px 100px 60px;
+    background-color: #121212;
+    border-radius: 20px;
+    width: 100%;
+    
+}
+
+.section h2{
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: yellow;
+        background: none;
+        margin-bottom: 30px;
+}
+
+.section .item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 30px;
+    background: none;
+}
+
+.section .icon {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px;
+    width: 100%;
+    font-size: 50px;
+    justify-content: center;
+    background: none;
+}
+
+.section .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+    flex: 1;
+    background: none;
+}
+
+.section .title {
+    font-size: 25px;
+    font-weight: bold;
+    background: none;
+}
+
+.section .description {
+    font-size: 20px;
+    color: #555;
+    background: none;
+  }
+
+.mycontainer2 {  
+    display: flex;
+    background-color: black;
+    margin: 10px 160px;
+    gap: 30px;
+    color: white;
+}
+
+.icon i{
+    background: none;
+    font-size: 35px;
+}
+
+.newcontainer {
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 70px 35px;
+    text-align: center;
+    justify-content: center;
+    margin: 50px 10%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.newcontainer.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.newcontainer h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.newcontainer p {
+    font-size: 0.9em;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.newbutton {
+    background-color: #FF5733;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.newbutton:hover {
+    background-color: #121214;
+    transition: .5s ease-in-out;
+}
+
+.newcontainer .newbutton i{
+    color: white;
+}
+
+footer{
+    background-color: #121214;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 150px;
+    height: 50vh;
+}
+
+footer .social-section {
+    margin-bottom: 10px;
+}
+
+footer .social-section p{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 50;
+}
+
+footer .social-icons i{
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    border:solid 2px #55514c;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+footer p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+footer .social-icons a:hover{
+    opacity: 0.7;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #121214;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+  
+  #back-to-top:hover {
+    opacity: 1;
+  }
